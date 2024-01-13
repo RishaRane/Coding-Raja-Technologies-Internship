@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music.css">
+    <script src="https://kit.fontawesome.com/8a89ee60a9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <h1>Library</h1>
+            <div class="list">
+
+                <div class="swift">
+                    <div class="box1">
+                        <h4>Love Story</h4>
+                        <p>Taylor Swift</p>
+                    </div>
+                    <div class="play" onclick="playPause()">
+                        <i class="fa-solid fa-play" id="playID2"></i>
+                    </div>
+                    <img src="images/taylorSwift.jpg" alt="" width="45px">
+                </div>
+
+                <div class="ellish">
+                    <div class="box2">
+                        <h4>Isn't it Lovely</h4>
+                        <p>Billie Ellish</p>
+                    </div>
+                    <div class="play" onclick="playPause()">
+                        <i class="fa-solid fa-play" id="playID3"></i>
+                    </div>
+                    <img src="images/ellish.jpg" alt="" width="45px">
+                </div>
+
+                <div class="selena">
+                    <div class="box3">
+                        <h4>Calm Down</h4>
+                        <p>Selena Gomez</p>
+                    </div>
+                    <div class="play" onclick="playPause()">
+                        <i class="fa-solid fa-play" id="playID4"></i>
+                    </div>
+                    <img src="images/selena.jpg" alt="" width="45px">
+                </div>
+
+                <div class="justin">
+                    <div class="box4">
+                        <h4 >Stay Forvever</h4>
+                        <p>Justin Bieber</p>
+                    </div>
+                    <div class="play" onclick="playPause()">
+                        <i class="fa-solid fa-play" id="playID5"></i>
+                    </div>
+                    <img src="images/justinBieber.jpg" alt="" width="45px">
+                </div>
+
+            </div>
+            <button onclick="createPlaylist()" class="playlist">Create Playlist</button>
+
+
+            <!-- Add a modal for creating a playlist -->
+            <div id="playlistModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <h2>Create Playlist</h2>
+                    <input type="text" id="playlistName" placeholder="Playlist Name">
+
+                    <!-- Add an element with id="availableSongs" here -->
+                    <div id="availableSongs"></div>
+
+                    <button onclick="addPlaylist()">Create</button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="right">
+            <div class="window" id="window">
+                <div class="img1">
+                    <img src="images/taylorSwift.jpg" alt="Taylor Swift" width="250px">
+                    <h1>Love Story</h1>
+                    <p>Taylor Swift</p>
+                </div>
+
+                <div class="audio">
+                    <audio id="song">
+                        <source src="media/LoveStory.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+
+
+                <div class="progressBar">
+                    <input type="range" value="0" id="progress" class="progress">
+                </div>
+
+
+                <div class="controls">
+                    <div class="backward">
+                        <i class="fa-solid fa-backward"></i>
+                    </div>
+                    <div class="play" onclick="playPause()">
+                        <i class="fa-solid fa-play" id="playID"></i>
+                    </div>
+                    <div class="forward">
+                        <i class="fa-solid fa-forward"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="music.js"></script>
+</body>
+
+</html>

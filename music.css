@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Afacad', sans-serif;
+}
+.main{
+    display: flex;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 27%, rgba(138,138,138,1) 100%);
+    width: 100%;
+    height: 820px;
+}
+.main .left{
+    border: 2px solid white;
+    width: 30%;
+}
+.main .right .window{
+    background: linear-gradient(90deg, rgba(187,187,187,1) 27%, rgba(206,244,249,1) 100%);
+    margin-top: 150px;
+    width: 370px;
+    height: 520px;
+    margin-left: 250px;
+    border-radius: 20px;
+}
+.main .right .window .img1 img {
+    margin-left: 59px;
+    margin-top: 50px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.main .right .window .img1 h1{
+    margin-left: 120px;
+    margin-top: 10px;
+}
+.main .right .window .img1 p{
+    margin-left: 150px;
+}
+.main .right .window .img1 .progressBar{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+#progress{
+    -webkit-appearance: none; 
+    width: 100%; 
+    height: 6px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    margin: 25px 0px; 
+    background-color: #00a3d7;
+}
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: rgb(134, 134, 134);
+    width: 30px;
+    height: 30px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(10, 115, 236, 0.22);
+}
+.main .right .window .controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .right .window .controls div{
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+    margin-top: -5px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 7px 7px rgba(10, 115, 236, 0.22);
+    cursor: pointer;
+}
+.main .right .window .backward .fa-backward, .main .right .window .forward .fa-forward{
+    color: #00a3d7;
+}
+.main .right .window .controls div:nth-child(2){
+    transform: scale(1.3);
+    background: #00a3d7;
+    color: #fff;
+}
+
+
+.main .left{
+    color: white;
+}
+.main .left h1{
+    text-align: center;
+}
+.main .left .list .swift, .ellish, .selena, .justin{
+    display: flex;
+    background-color: rgb(61, 59, 59);
+}
+.main .left .list{
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-right: 40px;
+}
+.main .left .list .ellish, .selena, .justin{
+    margin-top: 20px;
+}
+.main .left .list .swift .box1, .main .left .list .ellish .box2, .main .left .list .selena .box3, .main .left .list .justin .box4{
+    margin-left: 15px;
+}
+.main .left .list .swift  .play{
+    margin-left: 169px;
+    margin-right: 25px;
+    font-size: 20px;
+    margin-top: 7px;
+}
+.main .left .list .ellish  .play{
+    margin-left: 149px;
+    margin-right: 25px;
+    font-size: 20px;
+    margin-top: 7px;
+}
+.main .left .list .selena  .play{
+    margin-left: 154px;
+    margin-right: 25px;
+    font-size: 20px;
+    margin-top: 7px;
+}
+.main .left .list .justin  .play{
+    margin-left: 145px;
+    margin-right: 10px;
+    font-size: 20px;
+    margin-top: 7px;
+}
+#playID2, #playID3, #playID4, #playID5{
+    font-size: 30px;
+}
+#playID5{
+    margin-right: 16px;
+}
+
+/* Add styles for the modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+.main .left .playlist{
+    margin-left: 40px;
+    font-size: 25px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 40px;
+}
